@@ -1,4 +1,4 @@
-# Ask Away
+# Ask Me
 
 A simple Gradio chat app that lets a persona ("Your Name") answer questions using profile context, call helper tools, and send Pushover notifications for specific events.
 
