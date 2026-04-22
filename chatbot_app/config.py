@@ -1,0 +1,23 @@
+PUSHOVER_MESSAGES_URL = "https://api.pushover.net/1/messages.json"
+
+CHAT_MODEL = "gpt-4o-mini"
+SENTIMENT_MODEL = "gpt-4o-mini"
+
+SENTIMENT_POSITIVE = "positive"
+SENTIMENT_NEUTRAL = "neutral"
+SENTIMENT_NEGATIVE = "negative"
+VALID_SENTIMENT_LABELS = {SENTIMENT_POSITIVE, SENTIMENT_NEUTRAL, SENTIMENT_NEGATIVE}
+
+DEFAULT_SENTIMENT_PUSH_COOLDOWN_SECONDS = 600
+DEFAULT_NEGATIVE_CONFIDENCE_THRESHOLD = 0.75
+
+MAX_LATEST_MESSAGE_PREVIEW_CHARS = 180
+MAX_CONVERSATION_PREVIEW_CHARS = 260
+
+INTRO_MESSAGE_TEMPLATE = "Hi, I'm {name}. How are you?"
+
+SENTIMENT_SYSTEM_PROMPT = (
+    "Classify sentiment as positive, neutral, or negative. "
+    "Return JSON with keys: sentiment, confidence, rationale."
+)
+
