@@ -86,11 +86,6 @@ Or without activation:
 - Open that URL in your browser to use the chatbot UI.
 - If `7860` is already in use, Gradio may choose another port (check the printed URL).
 
-Optional: to create a temporary public share link, update `app.py` launch call to:
-
-```python
-gr.ChatInterface(me.chat, chatbot=chatbot).launch(share=True)
-```
 
 ## Notes
 
